@@ -1,0 +1,12 @@
+{
+	"id": "{C435218D-4324-4746-97F0-37AD386CAA17}",
+	"description": "Logitech Harmony API Hub Modul",
+	"tags": "Logitech",
+	"req_ips_version": "4.2",
+	"author": "Fonzo",
+	"name": "Harmony Hub API",
+	"url": "http://www.logitech.com/de-de/harmony-remotes",
+	"version": "1.0",
+	"build": 0,
+	"date": 0
+}

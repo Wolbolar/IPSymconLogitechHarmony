@@ -1,0 +1,13 @@
+{
+    "id": "{37D1B484-B5A5-4C0D-AE53-0DD022923248}",
+	"title": "Logitech Harmony Hub API Konfigurator",
+	"description": "Logitech Harmony Hub API Konfigurator zur Bindung an die Logitech API und zum Einrichten der Logitech Hubs",
+    "name": "HarmonyAPIConfigurator",
+    "type": 4,
+    "vendor": "",
+    "aliases": ["Logitech Harmony API Konfigurator"],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "HarmonyAPICONF"
+}

@@ -1,0 +1,73 @@
+{
+    "elements":
+            [
+                {
+                    "name": "Open",
+                    "type": "CheckBox",
+                    "caption": "Open"
+                },
+				{ "type": "Label", "label": "category for Logitech Harmony Hub devices" },
+				{ "type": "SelectCategory", "name": "ImportCategoryID", "caption": "Harmony Hub devices" },
+				{ "type": "Label", "label": "Create Harmony devices for remote control:" },
+				{ "type": "Label", "label": "Firmware from the Harmony Hub:" },
+				{ "type": "ValidationTextBox", "name": "Firmware", "caption": "Firmware"},
+				{ "type": "Label", "label": "Harmony Hub User:" },
+				{ "type": "ValidationTextBox", "name": "HarmonyUser", "caption": "Harmony User"},
+				{ "type": "Label", "label": "create links for Alexa SmartHomeSkill:" },
+				{
+                    "name": "Alexa",
+                    "type": "CheckBox",
+                    "caption": "Alexa"
+                }
+            ],
+	"actions":
+			[
+				{ "type": "Label", "label": "Refresh Harmony Hub Activities:" },
+				{ "type": "Button", "label": "Refreah Activities", "onClick": "HarmonyHubAPI_DiscoverHub($id);" },
+				{ "type": "Label", "label": "Discover Hub Information:" },
+				{ "type": "Button", "label": "Discover Hub", "onClick": "HarmonyHubAPI_GetHubActivities($id);" }
+			],		
+    "status":
+            [
+                {
+                    "code": 101,
+                    "icon": "inactive",
+                    "caption": "Creating instance."
+                },
+				{
+                    "code": 102,
+                    "icon": "active",
+                    "caption": "Harmony Hub accessible."
+                },
+                {
+                    "code": 104,
+                    "icon": "inactive",
+                    "caption": "interface closed."
+                },
+                {
+                    "code": 202,
+                    "icon": "error",
+                    "caption": "Harmony Hub IP adress must not empty."
+                },
+				{
+                    "code": 203,
+                    "icon": "error",
+                    "caption": "No valid IP adress."
+                },
+                {
+                    "code": 204,
+                    "icon": "error",
+                    "caption": "connection to the Harmony Hub lost."
+                },
+				{
+                    "code": 205,
+                    "icon": "error",
+                    "caption": "field must not be empty."
+                },
+				{
+                    "code": 206,
+                    "icon": "error",
+                    "caption": "select category for import."
+                }
+            ]
+}

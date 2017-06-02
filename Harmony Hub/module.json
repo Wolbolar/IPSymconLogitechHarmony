@@ -1,0 +1,13 @@
+{
+    "id": "{32803D90-824E-4CDE-987E-107CEB48D441}",
+	"title": "Logitech Harmony Hub",
+	"description": "Logitech Harmony Hub, für jeden Logitech Hub existiert eine eigene Instanz",
+    "name": "HarmonyHubAPI",
+    "type": 1,
+    "vendor": "Logitech",
+    "aliases": ["Logitech Harmony Hub API"],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "HarmonyHubAPI"
+}

@@ -1,0 +1,32 @@
+{
+	"translations": {
+		"de": { 
+			"Open": "Aktiv",
+			"Harmony hub name, hub id etc. can not be changed, please use the Harmony configurator to setup the Harmony hubs.":"Harmony Hub Name, Hub ID usw. kann nicht in IP-Symcon verändert werden, bitte den Harmony Konfigurator nutzten um die Harmony Hubs anzulegen.",
+			"If you want to change the Harmony hub name you can do this in the MyHarmony App from Logitech.":"Wenn der Harmomy Hub Name geändert werden soll muss dies in der MyHarmony App von Logitech durchgeführt werden.",
+			"Name of the Logitech Harmony hub:":"Name des Logitech Harmony Hub",
+			"Logitech Harmony hub id:":"Logitech Harmony Hub ID:",
+			"Firmware from the Logitech Harmony hub:":"Firmware Version des Logitech Harmony Hub:",
+			"Logitech Harmony Hub user:":"Logitech Harmony Hub Benutzer:",
+			"Discover hub information:":"Harmony Hub Informationen auslesen:",
+			"Discover hub":"Hub auslesen",
+			"Refresh Harmony hub activities:":"Aktivitäten neu auslesen:",
+			"Refresh activities":"Aktivitäten auslesen",
+			"Create scripts for Harmony hub activities:":"Skripte für Harmony Hub Aktivitäten anlegen:",
+			"Create activity scripts":"Aktivitäten Skripte anlegen",
+			"Creating instance.": "Die Instanz wird erstellt.",
+			"Harmony Hub accessible.": "Harmony Hub ereichbar.",
+			"interface closed.": "Interface geschlossen.",
+			"Harmony Hub IP adress must not empty.": "Harmony Hub IP Adresse darf nicht leer sein.",
+			"No valid IP adress.": "Keine gültige IP Adresse.",
+			"connection to the Harmony Hub lost.": "Verbindung zum Harmony Hub verloren.",
+			"field must not be empty.": "Felder dürfen nicht leer sein.",
+			"select category for import.": "Kategorie zum Import auswählen.",
+			"Alexa Smart Home Skill is available in IP-Symcon": "Alexa SmartHomeSkill ist in IP-Symcon verfügbar",
+			"Would you like to create links for Alexa for Harmony actions in the SmartHomeSkill instace?": "Sollen Links zum Schalten von Harmony Aktionen für Alexa in der SmartHomeSkill Instanz erstellt werden?",
+			"Create links for Amazon Echo / Dot": "Links für Amazon Echo /Dot anlegen"
+			
+			
+		}
+	}
+}

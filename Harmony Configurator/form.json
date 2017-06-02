@@ -1,0 +1,75 @@
+{
+    "elements":
+            [
+                { "type": "Label", "label": "Logitech Harmony Hub Configurator:" },
+				{ "type": "Label", "label": "1. Step:" },
+				{ "type": "Label", "label": "Select a category (see below) for the creation of a link for the Webfront for the Logitech Harmony Hub activities and then push \"Apply\"" },
+				{ "type": "Label", "label": "category for Logitech Harmony Hub activities" },
+				{ "type": "SelectCategory", "name": "ImportCategoryID", "caption": "Harmony Hub category" },
+				{ "type": "Label", "label": "2. Step:" },
+				{ "type": "Label", "label": "Push \"Register\" in the action part of this configuration form." },
+				{ "type": "Label", "label": "At the webpage from Logitech log in with your Harmony username and your Harmony password." },
+				{ "type": "Label", "label": "If the connection to IP-Symcon was successfull you get the message: \"Logitech MyHarmony successfully connected!\". Close the browser window." },
+				{ "type": "Label", "label": "Return to this configuration form, push \"Apply\" and close the Logitech Harmony Hub configurator and open it then once again." },
+				{ "type": "Label", "label": "3. Step:" },
+				{ "type": "Label", "label": "Push \"Get Harmony Hub Info\"" },
+				{ "type": "Label", "label": "When the Variables \"Harmony Discover\" and \"Harmony Activities\" are updated, close this instance and open it again."},
+				{ "type": "Label", "label": "You will then see a list of your Harmony Hubs and available activities."},
+				{ "type": "Label", "label": "4. Step:" },
+				{ "type": "Label", "label": "After all settings in the configuration form are set push \"Create Harmony Hubs\"" },
+				{ "type": "Label", "label": "__________________________________________________________________________________________________" }
+				
+            ],
+	"actions":
+			[
+				{ "type": "Label", "label": "1. Register with your Logitech Harmony Username und Logitech Harmony Password:" },
+				{ "type": "Button", "label": "Register", "onClick": "echo HarmonyAPICONF_Register($id);" },
+				{ "type": "Label", "label": "2. Get Information about the Logitech Harmony Hubs:" },
+				{ "type": "Button", "label": "Get Harmony Hub Info", "onClick": "HarmonyAPICONF_GetInfo($id);" },
+				{ "type": "Label", "label": "3. Create Logitech Harmony Hubs:" },
+				{ "type": "Button", "label": "Create Harmony Hubs", "onClick": "HarmonyAPICONF_SetupHarmony($id);" }
+			],		
+    "status":
+            [
+                {
+                    "code": 101,
+                    "icon": "inactive",
+                    "caption": "Creating instance."
+                },
+				{
+                    "code": 102,
+                    "icon": "active",
+                    "caption": "Harmony Hub accessible."
+                },
+                {
+                    "code": 104,
+                    "icon": "inactive",
+                    "caption": "interface closed."
+                },
+                {
+                    "code": 202,
+                    "icon": "error",
+                    "caption": "Harmony Hub IP adress must not empty."
+                },
+				{
+                    "code": 203,
+                    "icon": "error",
+                    "caption": "No valid IP adress."
+                },
+                {
+                    "code": 204,
+                    "icon": "error",
+                    "caption": "connection to the Harmony Hub lost."
+                },
+				{
+                    "code": 205,
+                    "icon": "error",
+                    "caption": "field must not be empty."
+                },
+				{
+                    "code": 206,
+                    "icon": "error",
+                    "caption": "select category for import."
+                }
+            ]
+}

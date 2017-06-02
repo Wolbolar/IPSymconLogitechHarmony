@@ -1,0 +1,13 @@
+{
+    "id": "{1328D250-1FD0-4E82-85B6-A5F6422C83F8}",
+	"title": "Harmony API Device",
+	"description": "Harmony API Geräte Instanz des Logitech Harmony Hub",
+    "name": "HarmonyAPIDevice",
+    "type": 3,
+    "vendor": "Logitech",
+    "aliases": ["Logitech Harmony API Device"],
+    "parentRequirements": ["{BA251C1E-82D4-42C0-AB78-45B6950C8348}"],
+    "childRequirements": [],
+    "implemented": ["{0D01EDE6-640B-42F1-BB46-E4A5E7001225}"],
+    "prefix": "LHDAPI"
+}
