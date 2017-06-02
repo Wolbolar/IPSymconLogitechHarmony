@@ -54,11 +54,11 @@ In the opening window, proceed as described below:
 ![Configuratorform1](img/KonfiguratorForm1.png?raw=true "Configuratorform 1")
 ![Configuratorform2](img/KonfiguratorForm2.png?raw=true "Configuratorform 2")
 
-####1. step
+#### 1. Create category
 
 Create a category in the IP-Symcon object tree (_**CTRL+0**_) under which the activities are to be created. Select the created category in the configuration form, which is displayed in the Webfront and press _**Apply**_.
 
-####2. step
+#### 2. Logitech authorization
 
 Press the _** Register **_ button in the action section of the configuration form. This opens a browser window that automatically forwards Logitech's authentication site to authenticate IP-Symcon to use the Logitech Harmony Hub.
 Here you have the choice to log on with your Facebook user name, Google user name or _MyHarmony user name_ (email).
@@ -76,13 +76,13 @@ If the input was correct and a link to IP-Symcon could be created, the message _
 
 Now we close the browser window and switch back to the configuration form in IP-Symcon.
 
-####3. step Retrieve information
+#### 3. Retrieve information
 
 Now press the _**Get Harmony Hub info**_ and wait a short moment until the variables _**Harmony Discover**_ and _**Harmony Activities**_ have been described. The variables _**Harmony Discover**_ and _**Harmony Activities**_ 
 are located below the _Logitech Harmony API Configurator_. If the variables _**Harmony Discover**_ and _**Harmony Activities**_ have been updated, continue with step 4.
 
 
-####4. step
+#### 4. Setup Logitech Harmony Hubs
 
 After all settings have been set press _**Create Harmony hubs**_ . A Logitech I/O instance is now created by the configurator for all Logitech Harmony Hubs connected to the MyHarmony account in IP Symcon.
 The Logitech API currently supports only switching actions. There is automatically created a link for the Webfront, which can then be moved to the visualization to switch action from the Webfront.

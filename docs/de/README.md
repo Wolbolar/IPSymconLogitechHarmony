@@ -52,11 +52,11 @@ Im dem sich öffnenden Fenster zunächst bei Erstinstallation wie folgt vorgehen
 ![Configuratorform1](img/KonfiguratorForm1.png?raw=true "Configuratorform 1")
 ![Configuratorform2](img/KonfiguratorForm2.png?raw=true "Configuratorform 2")
 
-####1. Schritt
+#### 1. Kategorie anlegen
 
 Eine Kategorie im IP-Symcon Objektbaum anlegen (_**CTRL+0**_) unter der die Aktivitäten angelegt werden sollen. Die erstellte Kategorie im Konfigurationsformular auswählen, diese dient der Anzeige im Webfront und _**Übernehmen**_ drücken.
 
-####2. Schritt
+#### 2. Logitech Registrierung
 
 Den Button _**Registrieren**_ in der Aktionsektion des Konfigurationsformulares drücken. Es öffnet sich ein Browserfester das automatisch zur Authentifizierungs Website von Logitech weiterleitet um IP-Symcon zur Nutzung des Logitech Harmony Hubs zu authentifizieren. 
 Hier hat man die Auswahl sich mit seinem Facebook Benutzernamen, Google Benutzernamen oder dem _MyHarmony Benutzernamen_ (Email) anzumelden.
@@ -74,12 +74,12 @@ Wenn die Eingabe korrekt war und eine Verknüpfung zu IP-Symcon erstellt werden 
 
 Nun schließen wir das Browser Fenster und wechseln zurück zum Konfigurationsformular in IP-Symcon.
 
-####3. Schritt Information abholen
+#### 3. Information abholen
 
 Jetzt drücken wir die Taste _**Harmony Hub Info holen**_ und warten einen kurzen Moment bis die Variablen _**Harmony Discover**_ und _**Harmony Activities**_ beschrieben worden sind. Die Variablen _**Harmony Discover**_ und _**Harmony Activities**_
 befinden sich unterhalb des _Logitech Harmony API Konfigurator_. Wenn die Variablen _**Harmony Discover**_ und _**Harmony Activities**_ aktualisiert wurden kann mit Schritt 4 fortgefahren werden.
 
-####4. Schritt
+#### 4. Setup Logitech Harmony Hubs
 
 Nachdem alle Einstellungen gesetzt wurden _**Harmony Hubs anlegen**_ drücken. Es werden nun vom Konfigurator jeweils eine Logitech I/O Instanz für alle mit dem MyHarmony Account verknüpften Logitech Harmony Hubs in IP-Symcon angelegt.
 Die Logitech API unterstützt zur Zeit nur das schalten von Aktionen. Es wird für den Webfront automatisch ein Link erstellt dieser kann dann in die Visulalisierung verschoben werden um Aktion aus dem Webfront zu schalten.
@@ -102,13 +102,13 @@ Die aktuelle Akivität des Logitech Harmony Hub wird in der Variable Harmony Act
  
 Wenn die Aktivität über Funktionen aktualisiert werden soll oder über ein Skript geschaltet sind die folgenden Funktionen zu benutzten:
  
-####Liest alle verfügbaren Informationen der mit dem Logitech Account verknüpften Logitech Harmony Hubs aus.
+#### Liest alle verfügbaren Informationen der mit dem Logitech Account verknüpften Logitech Harmony Hubs aus.
 ```php
 HarmonyHubAPI_Discover(int $InstanceID) 
 ```   
 Parameter _$InstanceID_ ObjektID des Harmony Hub I/O
 
-####Liest alle verfügbaren Informationen eines spezifischen Logitech Harmony Hubs aus.  
+#### Liest alle verfügbaren Informationen eines spezifischen Logitech Harmony Hubs aus.  
 ```php
 HarmonyHubAPI_DiscoverHub(int $InstanceID, int $hubId) 
 ```   
@@ -116,13 +116,13 @@ Parameter _$InstanceID_ ObjektID des Harmony Hub I/O
 
 Parameter _$hubId_ Indentifikations Nummer des Logitech Harmony Hub, diese ist in der Instanz des Logitech Hub zu finden 
 
-####Liest alle verfügbaren Aktivitäten der mit dem Logitech Account verknüpften Logitech Harmony Hubs aus.  
+#### Liest alle verfügbaren Aktivitäten der mit dem Logitech Account verknüpften Logitech Harmony Hubs aus.  
 ```php
 HarmonyHubAPI_GetActivities(integer $InstanceID) 
 ```   
 Parameter _$InstanceID_ ObjektID des Harmony Hub I/O
 
-####Liest alle verfügbaren Aktivitäten eines spezifischen Logitech Harmony Hubs aus.    
+#### Liest alle verfügbaren Aktivitäten eines spezifischen Logitech Harmony Hubs aus.    
 ```php
 HarmonyHubAPI_GetHubActivities(integer $InstanceID, int $hubId) 
 ```   
@@ -130,13 +130,13 @@ Parameter _$InstanceID_ ObjektID des Harmony Hub I/O
   
 Parameter _$hubId_ Indentifikations Nummer des Logitech Harmony Hub, diese ist in der Instanz des Logitech Hub zu finden 
 
-####Liest den Status der mit dem Logitech Account verknüpften Logitech Harmony Hubs aus.  
+#### Liest den Status der mit dem Logitech Account verknüpften Logitech Harmony Hubs aus.  
 ```php
 HarmonyHubAPI_GetStateDigest(integer $InstanceID) 
 ```   
 Parameter _$InstanceID_ ObjektID des Harmony Hub I/O  
 
-####Liest den Status eines spezifischen Logitech Harmony Hubs aus.   
+#### Liest den Status eines spezifischen Logitech Harmony Hubs aus.   
 ```php
 HarmonyHubAPI_GetHubStateDigest(integer $InstanceID, int $hubId) 
 ```   
@@ -144,13 +144,13 @@ Parameter _$InstanceID_ ObjektID des Harmony Hub I/O
   
 Parameter _$hubId_ Indentifikations Nummer des Logitech Harmony Hub, diese ist in der Instanz des Logitech Hub zu finden  
 
-####Beendet alle aktuellen AV Aktionen und setzt alle AV Geräte auf aus, die mit dem Logitech Account verknüpften Logitech Harmony Hubs kontrolliert werden.
+#### Beendet alle aktuellen AV Aktionen und setzt alle AV Geräte auf aus, die mit dem Logitech Account verknüpften Logitech Harmony Hubs kontrolliert werden.
 ```php
 HarmonyHubAPI_PowerOffAV(integer $InstanceID) 
 ```   
 Parameter _$InstanceID_ ObjektID des Harmony Hub I/O   
 
-####Beendet alle aktuellen AV Aktionen und setzt alle AV Geräte auf aus, die mit dem spezifischen Logitech Harmony Hub kontrolliert werden.
+#### Beendet alle aktuellen AV Aktionen und setzt alle AV Geräte auf aus, die mit dem spezifischen Logitech Harmony Hub kontrolliert werden.
 ```php
 HarmonyHubAPI_PowerOffHubAV(integer $InstanceID, int $hubId) 
 ```   
@@ -158,7 +158,7 @@ Parameter _$InstanceID_ ObjektID des Harmony Hub I/O
 
 Parameter _$hubId_ Indentifikations Nummer des Logitech Harmony Hub, diese ist in der Instanz des Logitech Hub zu finden   
 
-####Schaltet die Aktivität eines spezifischen Logitech Harmony Hubs ein. Falls es sich um eine AV Aktivität handelt wird die aktuelle AV Aktivität beendet. Wenn eine nicht-AV Aktivität gestartet wird beeinflusst dies nicht die laufende AV Aktivität.
+#### Schaltet die Aktivität eines spezifischen Logitech Harmony Hubs ein. Falls es sich um eine AV Aktivität handelt wird die aktuelle AV Aktivität beendet. Wenn eine nicht-AV Aktivität gestartet wird beeinflusst dies nicht die laufende AV Aktivität.
 ```php
 HarmonyHubAPI_StartActivityAPI(integer $InstanceID, int $hubId, int $activityId) 
 ```   
@@ -168,7 +168,7 @@ Parameter _$hubId_ Indentifikations Nummer des Logitech Harmony Hub, diese ist i
 
 Parameter _$activityId_ Indentifikations Nummer der Logitech Harmony Hub Aktivität, diese kann in der Instanz des Logitech Hub gefunden werden 
 
-####Schaltet die Aktivität eines spezifischen Logitech Harmony Hubs aus. 
+#### Schaltet die Aktivität eines spezifischen Logitech Harmony Hubs aus. 
 ```php
 HarmonyHubAPI_EndActivity(integer $InstanceID, int $hubId, int $activityId) 
 ```   
